@@ -1,0 +1,51 @@
+<html>
+   <head>
+      <script 
+         src = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js">
+      </script>
+      <link rel = "stylesheet" 
+         href = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+      <link rel = "stylesheet" 
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">	  
+      
+      <script langauage = "javascript">
+         function showMessage(value) {
+            document.getElementById("message").innerHTML  =  value;
+         }	  
+      </script>
+   </head>
+   
+   <body>
+      <table>
+         <tr><td>Default Radio Button</td><td>Radio Button with Ripple Effect</td>
+            <td>Disabled Radio Button</td></tr>
+         <tr>
+            <td> 
+               <label class = "mdl-radio mdl-js-radio" for = "option1">
+                  <input type = "radio" id = "option1" name = "gender" 
+                     class = "mdl-radio__button" checked>
+                  <span class = "mdl-radio__label">Male</span>
+               </label>
+            </td>
+            
+            <td>
+               <label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect" 
+                  for = "option2">
+                  <input type = "radio" id = "option2" name = "gender" 
+                     class = "mdl-radio__button" >
+                  <span class = "mdl-radio__label">Female</span>
+               </label>
+            </td>
+            
+            <td>
+               <label class = "mdl-radio mdl-js-radio" for = "option3">
+                  <input type = "radio" id = "option3" name = "gender" 
+                     class = "mdl-radio__button" disabled>
+                  <span class = "mdl-radio__label">Don't know (Disabled)</span>
+               </label>      
+            </td>
+         </tr>
+      </table>   
+   
+   </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+   <head>
+      <script 
+         src = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js">
+      </script>
+      <link rel = "stylesheet" 
+         href = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+      <link rel = "stylesheet" 
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">	  
+   </head>
+   
+   <body>
+      <h4>Default Progress bar</h4>
+      <div id = "progressbar1" class = "mdl-progress mdl-js-progress"></div>
+      <h4>Indeterminate Progress bar</h4>
+      <div id = "progressbar2" 
+         class = "mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+      <h4>Buffering Progress bar</h4>
+      <div id = "progressbar3" class = "mdl-progress mdl-js-progress"></div>
+      
+      <script language = "javascript">
+         document.querySelector('#progressbar1').addEventListener('mdl-componentupgraded', 
+            function() {
+            this.MaterialProgress.setProgress(44);
+         });
+         document.querySelector('#progressbar3').addEventListener('mdl-componentupgraded', 
+            function() {
+            this.MaterialProgress.setProgress(33);
+            this.MaterialProgress.setBuffer(87);
+         });
+      </script>
+   
+   </body>
+</html>

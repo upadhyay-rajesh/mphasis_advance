@@ -1,0 +1,49 @@
+<html>
+   <head>
+      <script 
+         src = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js">
+      </script>
+      <link rel = "stylesheet" 
+         href = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+      <link rel = "stylesheet" 
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">	  
+      
+      <script langauage = "javascript">
+         function showMessage(value) {
+            document.getElementById("message").innerHTML = value;
+         }	  
+      </script>
+   </head>
+   
+   <body>
+      <table>
+         <tr><td>Simple Tooltip</td><td>Large Tooltip</td></tr>
+         <tr>
+            <td>
+               <div id = "tooltip1" class = "icon material-icons">add</div>
+               <div class = "mdl-tooltip" for = "tooltip1">Follow</div>
+            </td>
+            
+            <td>
+               <div id = "tooltip2" class = "icon material-icons">print</div>
+               <div class = "mdl-tooltip mdl-tooltip--large" for = "tooltip2">Print</div>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>Rich Tooltip</td><td>Multiline Tooltip</td></tr>
+         <tr>
+            <td>
+               <div id = "tooltip3" class = "icon material-icons">cloud_upload </div>
+               <div class = "mdl-tooltip" for = "tooltip3">Upload <i>zip files</i></div>
+            </td>
+            
+            <td>
+               <div id = "tooltip4" class = "icon material-icons">share</div>
+               <div class = "mdl-tooltip" for = "tooltip4">
+                  Share your content<br>using social media</div>
+            </td>
+         </tr>   	  
+      </table>   
+   </body>
+</html>
